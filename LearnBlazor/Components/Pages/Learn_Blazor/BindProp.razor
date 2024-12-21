@@ -1,0 +1,506 @@
+﻿@page "/learnBlazor/bindProp"
+
+<!--Parent Razor File-->
+
+<h3>BindProp</h3>
+<br />
+<br />
+
+******************************************************************************
+<h4>One-Way-Binding</h4>
+
+ID : @product.Id 
+<br/>
+NAME : @product.Name 
+<br/>
+ISACTIVE : @product.IsActive 
+<br/>
+PRICE: @product.Price
+<br />
+<br />
+<br />
+
+******************************************************************************
+<h4>Two-Way-Binding</h4>
+
+ID : @product.Id
+<br />
+NAME : @product.Name
+<br />
+ISACTIVE : @product.IsActive
+<br />
+PRICE: @product.Price
+<br /> 
+INPUT PRICE:
+<input type="double" value="@product.Price" />
+<br />
+<br />
+INPUT PRICE:
+<input type="double" @bind-value="@product.Price" @bind-value:event="oninput" />
+<br />
+<br />
+INPUT PRICE:
+<input type="double" @bind="@product.Price" @bind:event="oninput" />
+<br />
+<br />
+<br />
+
+******************************************************************************
+<h4>Show-Is-Active</h4>
+
+ID : @product.Id
+<br />
+NAME : @product.Name
+<br />
+ISACTIVE : @product.IsActive
+<br />
+PRICE: @product.Price
+<br />
+The Product is: @(product.IsActive?"Active":"InActive")
+<br />
+<br />
+<br />
+
+******************************************************************************
+<h4>Check-Box</h4>
+
+ID : @product.Id
+<br />
+NAME : @product.Name
+<br />
+ISACTIVE : @product.IsActive
+<br />
+PRICE: @product.Price   
+<br />
+ISACTIVE:
+<input type="checkbox" @bind="@product.IsActive" />
+<br />
+ISACTIVE:
+<input type="checkbox" @bind-value="@product.IsActive" checked="@(product.IsActive?"checked":null)" />
+<br />
+<br />
+<br />
+
+*****************************************************************************
+<h4>DropDown-List (1)</h4>
+
+<select @bind="selectedDropDownItem">
+    <option value="A">option1</option>
+    <option value="B">option2</option>
+    <option value="C">option3</option>
+</select>
+<br />
+SELECTED DROPDOWN ITEM: @selectedDropDownItem
+
+<br />
+<br />
+<br />
+*****************************************************************************
+<h4>DropDown-List (2)</h4>
+
+<select @bind="selectedDropDownItem">
+
+    @foreach (var i in "KIRAN")
+    {
+        <option value="(@i)">@i</option>
+    }
+</select>
+<br />
+SELECTED DROPDOWN ITEM: @selectedDropDownItem
+
+<br />
+<br />
+<br />
+
+**********************************************************************************************************************************************************
+<div class="row">
+    <div class="col-6 border p-3">
+        <h4 class="text-primary">DropDown-List (3)</h4>
+        <hr />
+
+        <select @bind="selectedDropDownItem">
+            <option value="A">option1</option>
+            <option value="B">option2</option>
+            <option value="C">option3</option>
+        </select>
+        <br />
+        SELECTED DROPDOWN ITEM: @selectedDropDownItem
+
+        <br />
+        <br />
+        <br />
+    </div>
+    
+    <div class="col-6 border p-3">
+        <h4 class="text-primary">DropDown-List (4)</h4>
+        <hr />
+
+        <select @bind="selectedDropDownItem">
+
+            @foreach (var i in "KIRAN")
+            {
+                <option value="(@i)">@i</option>
+            }
+        </select>
+        <br />
+        SELECTED DROPDOWN ITEM: @selectedDropDownItem
+
+        <br />
+        <br />
+        <br />
+    </div>
+</div>
+**********************************************************************************************************************************************************
+<h2 class="text-success">Table Format </h2>
+<div class="row">
+    <table class="table table-primary"> 
+        <thead>
+            <tr>
+                <td>Column1</td>
+                <td>Column2</td>
+                <td>Column3</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br />
+<br />
+<br />
+
+**********************************************************************************************************************************************************
+<h2 class="text-success">Table Format With Input</h2>
+<div class="row">
+    <table class="table table-primary">
+        <thead>
+            <tr>
+                <td>Column1</td>
+                <td>Column2</td>
+                <td>Column3</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" value="A1"/></td>
+                <td><input type="text" @bind="@product.Id" /></td>
+                <td><input type="checkbox" @bind="@product.IsActive" /></td>
+            </tr>
+            <tr>
+                <td><input type="text" value="A2" /></td>
+                <td><input type="text" @bind="@product.Id" /></td>
+                <td><input type="checkbox" @bind="@product.IsActive" /></td>
+            </tr>
+            <tr>
+                <td><input type="text" value="A3" /></td>
+                <td><input type="text" @bind="@product.Id" /></td>
+                <td><input type="checkbox" @bind="@product.IsActive" /></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br />
+<br />
+<br />
+
+*****************************************************************************
+<h4>Table Summary</h4>
+
+@if (!string.IsNullOrEmpty(@product.Name))
+{
+    <p>@product.Id     @product.Name     @product.Price     @product.IsActive</p>
+}
+
+<br />
+<br />
+<br />
+
+*****************************************************************************
+<h5>ProductPropertiesList_Direct</h5>
+
+@foreach (var item in  @product.ProductPropertiesList_Direct)
+{
+    <p>Item: @item</p>
+}
+
+<br />
+<br />
+<br />
+
+*****************************************************************************
+<h5>ProductPropertiesList_InDirect</h5>
+
+@foreach (var item in @product.ProductPropertiesList_InDirect)
+{
+    <h6>item_Id: @item.Id</h6>
+    <h6>item_Key: @item.Key</h6>
+    <h6>item_Value: @item.Value</h6>
+    <br/>
+}
+<h4>Select Id to display properties Key-Value: </h4>
+<select @bind="selectedDropDownItem">
+@foreach (var item in @product.ProductPropertiesList_InDirect)
+{
+    <option value="@item.Key : @item.Value">@item.Id</option>
+}
+</select>
+<br />
+selected Id's Key-Value : @selectedDropDownItem
+<br />
+<br />
+<br />
+
+*****************************************************************************
+<h5>Button1 (event without variable)</h5>
+
+<input type="button" class="btn btn-success" style ="width:100px" value="Click Here" @onclick="BtnClicked1"/>
+<p>Clicked Count : @ClickedCount1 </p> 
+
+<br />
+<br />
+<br />
+
+*****************************************************************************
+<h5>Button2 (event with variable)</h5>
+
+<input type="button" class="btn btn-success" style ="width:100px" value="Click Here" @onclick="()=>BtnClicked2(5)"/>
+<p>Clicked Count : @ClickedCount2 </p> 
+
+<br />
+<br /> 
+<br />
+
+*****************************************************************************
+<h5>Button3 (Using _ButtonComponents razor file)</h5>
+<!--<LearnBlazor.Components.Pages.Learn_Blazor.LearnBrazorComponents._ButtonComponents></LearnBlazor.Components.Pages.Learn_Blazor.LearnBrazorComponents._ButtonComponents>-->
+<!--Folder path of _ButtonComponents razor file (i.e child components or shared components) moved to USING block-->
+<_ButtonComponent></_ButtonComponent>
+
+<br />
+<br />
+<br />
+
+*****************************************************************************
+<h5>Button3 (Using _ButtonComponents razor file and parameter)</h5>
+<_ButtonComponent IncCount="6"></_ButtonComponent>
+
+<br />
+<br />
+<br />
+
+*****************************************************************************
+<h5>Button4 (Using _ButtonComponents razor file with parameter and EventCallback)</h5>
+<_ButtonComponent IncCount="8" EvntCalBck1="BtnClicked1"></_ButtonComponent>
+<p>Clicked Count : @ClickedCount1 </p>
+<br />
+<br />
+<br />
+
+*****************************************************************************
+<h5>Button5 (Using _ButtonComponents razor file with parameter and EventCallback with parameter )</h5>
+<_ButtonComponent IncCount="8" EvntCalBck1="BtnClicked1" EvntCalBck2="BtnClicked2"></_ButtonComponent>
+<p>Single Clicked Count : @ClickedCount1 </p>
+<p>Double Clicked Count : @ClickedCount2 </p>
+
+<br />
+<br />
+<br />
+
+*****************************************************************************           
+<h5>Button6 (Using _ButtonComponents razor file with parameter and EventCallback (method2) )</h5>
+<_ButtonComponent IncCount="8" EvntCalBck3="BtnFocused"> </_ButtonComponent>
+<p>Staus : @ButtonFocusedMsg </p>
+
+<br />
+<br />
+<br />
+
+*****************************************************************************
+<h5>Division Components (Using _DivComponents razor file)</h5>
+
+<p>Clicked Division is: @DivisionNum</p>
+<p>Clicked Division is at position: @LeftOrRight</p>
+<_DivComponent EvntCalBack="SetSelectedDivNum"></_DivComponent>
+
+
+<br />
+<br />
+<br />
+
+*****************************************************************************
+<h5>Child Components (Using _ChildComponents razor file) using RenderFragment</h5>
+
+<_ChildComponent Message="This is only Message"></_ChildComponent>
+<_ChildComponent Message="This is a Message">
+    This is another Message
+</_ChildComponent>
+<_ChildComponent>
+    This is only another Message
+</_ChildComponent>
+
+<br />
+<br />
+<br />
+
+*****************************************************************************
+<h5>Child Components (Using _ChildComponents razor file) using RenderFragment - but empty attribute and empty ChildContent</h5>
+<!--i.e no Property Parameter and no RenderFragment Parameter.-->
+<_ChildComponent ></_ChildComponent>
+
+<br />
+<br />
+<br />
+
+*****************************************************************************
+<h5>Child Components (Using _ChildComponents razor file) using default and multiple RenderFragment </h5>
+<_ChildComponent>
+    <ChildContent>
+        <p>This is Default ChildContent</p>
+        <br />
+        <p class="text-primary">This is also inside Default ChildContent</p>
+        </ChildContent>
+    <ChildContent2>This is Extra ChildContent</ChildContent2>
+</_ChildComponent>
+
+<br />
+<br />
+<br />
+
+*****************************************************************************
+<h5>Child Components (Using _ChildComponents razor file) : CascadingValue (Example only; not implemented.)</h5>
+<!--_ChildComponents.razor can render components from its child. If want to pass a value from Parent razor file to any of grandChild razor file ; instaed of passing value through multiple hierarchy use 'CascadingValue'--> 
+<!--Name field is required only when there are mutiple variables of same datattype (here str1, str2). Otherwise can omit it.-->
+<CascadingValue Value="@CascadingValueParameterInt" Name="CascadeInt">
+    <CascadingValue Value="@CascadingValueParameterStr1" Name="CascadeStr1">
+        <CascadingValue Value="@CascadingValueParameterStr2" Name="CascadeStr2">
+        <_ChildComponent>
+            <ChildContent>
+                <p>This is Default ChildContent</p>
+                <br />
+                <p class="text-primary">This is also inside Default ChildContent</p>
+            </ChildContent>
+            <ChildContent2>This is Extra ChildContent</ChildContent2>
+        </_ChildComponent>
+        </CascadingValue>
+    </CascadingValue>
+</CascadingValue>
+
+<br />
+<br />
+<br />
+
+<!--Refer JavaScript interop topic-->
+
+<!--Refer LifeCycle topic-->
+
+<!--@attribute [StreamRendering]--> <!--this is to load page even before complete execution of below C# @code block.. immediaterly when URL updates>
+
+<!--Interactive Render Modes: -->
+<!--None (i.e SSR: Server Side Rendering) (Means no interactivity. same as traditional web apps built using ASP.net MVC , PHP etc..)--> 
+<!--@rendermode InteractiveServer--> 
+<!--@rendermode InteractiveWebAssembly-->
+<!--@rendermode InteractiveAuto-->
+
+<!--Interactivity Location (i.e whether all the pages have interactivity?):  Global, Component/Page level-->
+
+ 
+******************************************************************************
+<h3>-     -     -    -     -     -     -     -    -     -     THE END    -     -     -    -     -     -     -     -     -      -</h3>
+******************************************************************************
+<br />
+<br />
+
+
+
+
+
+
+
+@code {
+    private string selectedDropDownItem = "";
+    private int ClickedCount1 = 0;
+    private int ClickedCount2 = 0;
+    private string ButtonFocusedMsg = string.Empty;
+    private int DivisionNum = 0;
+    private string LeftOrRight = string.Empty;
+
+    public int CascadingValueParameterInt   = 1000;
+    public string CascadingValueParameterStr1 = "Str1: This can be passed to all child components in the hierarachy";
+    public string CascadingValueParameterStr2 = "Str2: This can be passed to all child components in the hierarachy";
+
+    Product product = new ()
+        {
+            Id = 1,
+            Name = "Kiran",
+            IsActive = true,
+            Price = 100,
+            ProductPropertiesList_Direct = new()
+            {
+                "A",
+                "B",
+                "C"
+            },
+            ProductPropertiesList_InDirect = new List<Product_Prop> ()
+            {
+
+                new Product_Prop()
+                {
+                    Id = 100,
+                    Key = "Category",
+                    Value ="iPhone"
+                },
+                new Product_Prop()
+                {
+                    Id = 200,
+                    Key = "Color",
+                    Value ="Purple"
+                },
+                new Product_Prop()
+                {
+                    Id = 300,
+                    Key = "Storage",
+                    Value ="256"
+                }
+            }
+
+        };
+    private void BtnClicked1()
+    {
+        ClickedCount1++;
+    }
+
+    private void BtnClicked2(int incrementCount)
+    {
+        ClickedCount2 += incrementCount;
+    }
+
+    private void BtnFocused()
+    {
+        ButtonFocusedMsg ="Button Focused in Parent Razor File.";
+    }
+
+
+    private void SetSelectedDivNum((int , string) values)
+    {
+        // Extract the values from the tuple
+        DivisionNum = values.Item1;
+        LeftOrRight = values.Item2;
+    }
+}

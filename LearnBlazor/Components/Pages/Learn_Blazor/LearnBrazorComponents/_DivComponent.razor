@@ -1,0 +1,22 @@
+﻿<!--Non-Routale Component->
+
+<div class="row">
+    <div class="col-6 border p-3" color="green" @onclick='(args) => divClick(args, 1,"Left")'>
+        <p class="text-danger">Click On this Division-1</p>
+    </div>
+    <div class="col-6 border p-3" color="green" @onclick='(args) => divClick(args,2, "Right")'>
+        <p class="text-danger">Click On this Division-2</p>
+    </div>
+</div> 
+
+@code {
+    [Parameter]
+    public EventCallback<(int, string)> EvntCalBack { get; set; }
+
+    private async Task divClick(MouseEventArgs args, int divNum, string leftOrRight)
+    {
+        // Trigger the callback event
+        await EvntCalBack.InvokeAsync((divNum, leftOrRight));
+    }
+
+}

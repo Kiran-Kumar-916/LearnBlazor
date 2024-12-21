@@ -1,0 +1,75 @@
+﻿@page "/Routing"
+@page "/LearnBlazor/LearnRouting"                       //navLink highlights for this
+@page "/LearnBlazor/LearnRouting/AlternateUrl"          //navLink highlights for this
+@page "/LearnBlazor/LearnRoutingAlternateUrl"           //navLink not highlights for this
+@page "/LearnBlazor/LearnRouting/{Param1}/{Param2}"     //"/LearnBlazor/LearnRouting/{param1}/{param2:int}"
+@page "/LearnBlazor/LearnRouting/{Param1}"
+@page "/LearnBlazor/LearnRouting/{*ParamN}"
+<!--instead of mentioning parameters in above block can go for another method, Refer: [SupplyParameterFromQuery] method -->
+@inject NavigationManager _NavigationManager
+
+<h3>Routing</h3> 
+<p>param1: @Param1</p>
+<p>param2: @Param2</p>
+<p>paramN: @ParamN</p>
+
+<div class="bg-info" style="height:1000px"></div>
+<h2 id="targetElement">Focus Here When Page Loaded</h2> <!--id used in NavMenu.razor to set focus to this element When Page Loaded-->
+<br/>
+<br/>
+<br/>
+
+***************************************************************
+<!--To navigate Query Parameter to Url and Load Parameters to variable when required-->
+<br />
+<a href="Routing?Param1=Kiran&Param2=916" class="btn btn-primary">Navigate To Query Parameter using Anchor Tank</a>
+<button class="btn btn-primary" @onclick="NavigateToQueryParam">Navigate To Query Parameter using Button</button>
+<button class="btn btn-success" @onclick="LoadParameters">Load Parameters</button>
+<br />
+<br />
+<br />
+***************************************************************
+
+<!--Refresh Page-->
+<br />
+<button class="btn btn-success" @onclick="RefreshPage">Refresh Page</button>
+<br />
+<br />
+<br />
+***************************************************************
+<br />
+<br />
+<br />
+
+******************************************************************************
+<h3>-     -     -    -     -     -     -     -    -     -     THE END    -     -     -    -     -     -     -     -     -      -</h3>
+******************************************************************************
+<br />
+<br />
+
+@code {
+    [Parameter]
+    public string Param1 { get; set; } = "";
+    [Parameter]
+    public string Param2 { get; set; }       //public int Param2 { get; set; }
+    [Parameter]
+    public string ParamN { get; set; } = "";
+
+    public void LoadParameters()
+    {
+        var uri = new Uri(_NavigationManager.Uri);
+        var query = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(uri.Query);
+        Param1 = query["Param1"];
+        Param2 = query["Param2"];
+    }
+
+    public void NavigateToQueryParam()
+    {
+        _NavigationManager.NavigateTo("Routing?Param1=Kiran&Param2=916");
+    }
+
+    public void RefreshPage()
+    {
+        _NavigationManager.Refresh(forceReload: true);
+    }
+}

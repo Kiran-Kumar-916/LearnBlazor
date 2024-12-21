@@ -1,0 +1,30 @@
+﻿<!--Non-Routale Component->
+
+<input type="button" class="btn btn-success" style="width:100px" value="Child Button - @IncCount" @onclick="ClickEventProc1" @ondblclick="ClickEventProc2" @onfocus=@EvntCalBck3/>
+
+@code {
+    [Parameter]
+    public int IncCount { get; set; }
+
+    [Parameter]
+    public EventCallback EvntCalBck1 { get; set; }
+
+    [Parameter]
+    public EventCallback<int> EvntCalBck2 { get; set; }
+
+    [Parameter]
+    public EventCallback EvntCalBck3 { get; set; }
+
+    private async Task ClickEventProc1()
+    {
+        await EvntCalBck1.InvokeAsync();
+    }
+
+    private async Task ClickEventProc2(MouseEventArgs args) //private async Task ClickEventProc2(ChangeEventArgs args)
+    {
+        // can fetch event related values from args.***
+        await EvntCalBck2.InvokeAsync(IncCount);
+    }
+
+
+}

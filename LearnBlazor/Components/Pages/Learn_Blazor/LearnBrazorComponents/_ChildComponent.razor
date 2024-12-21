@@ -1,0 +1,31 @@
+﻿<!--Non-Routale Component->
+@if ((Message != null) || (ChildContent != null) || (ChildContent2 != null))
+{
+    <div class="alert alert-info">
+        <p>@Message</p>
+        <p>@ChildContent</p>
+        <p>@ChildContent2</p>
+    </div>
+}
+@code {
+    [Parameter]
+    public String Message { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+    
+    [Parameter]
+    public RenderFragment ChildContent2 { get; set; }
+
+
+    //below CascadingParameters can be skipped; if _ChildComponent.razor doesnot uses them. Any _GrandChildComponent.razor if need it it should follow below code to fetch CascadingParameters from Parent razor file .
+    [CascadingParameter(Name ="CascadeInt")]
+    public int CascadingValueParameterInt { get; set; }
+
+    [CascadingParameter(Name = "CascadeStr1")]
+    public int CascadingValueParameterStr1 { get; set; }
+
+    [CascadingParameter(Name = "CascadeStr2")]
+    public int CascadingValueParameterStr2 { get; set; }
+
+}

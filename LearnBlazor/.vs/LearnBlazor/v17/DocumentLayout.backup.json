@@ -1,0 +1,169 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|c:\\kiran kumar\\code\\learnblazorfolder\\learnblazor\\components\\pages\\learn_blazor\\bindprop.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|solutionrelative:components\\pages\\learn_blazor\\bindprop.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|c:\\kiran kumar\\code\\learnblazorfolder\\learnblazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|c:\\kiran kumar\\code\\learnblazorfolder\\learnblazor\\wwwroot\\bootstrap\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|solutionrelative:wwwroot\\bootstrap\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|c:\\kiran kumar\\code\\learnblazorfolder\\learnblazor\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|solutionrelative:wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|c:\\kiran kumar\\code\\learnblazorfolder\\learnblazor\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|c:\\kiran kumar\\code\\learnblazorfolder\\learnblazor\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|c:\\kiran kumar\\code\\learnblazorfolder\\learnblazor\\models\\product_prop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|solutionrelative:models\\product_prop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|c:\\kiran kumar\\code\\learnblazorfolder\\learnblazor\\components\\pages\\learn_blazor\\learnbrazorcomponents\\routing.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|solutionrelative:components\\pages\\learn_blazor\\learnbrazorcomponents\\routing.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|c:\\kiran kumar\\code\\learnblazorfolder\\learnblazor\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCCAF4D3-FA0E-4845-9614-C01B941ACB5F}|LearnBlazor.csproj|solutionrelative:components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T17:47:56.909Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product_Prop.cs",
+              "DocumentMoniker": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\Models\\Product_Prop.cs",
+              "RelativeDocumentMoniker": "Models\\Product_Prop.cs",
+              "ToolTip": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\Models\\Product_Prop.cs",
+              "RelativeToolTip": "Models\\Product_Prop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T06:56:34.947Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BindProp.razor",
+              "DocumentMoniker": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\Components\\Pages\\Learn_Blazor\\BindProp.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Learn_Blazor\\BindProp.razor",
+              "ToolTip": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\Components\\Pages\\Learn_Blazor\\BindProp.razor",
+              "RelativeToolTip": "Components\\Pages\\Learn_Blazor\\BindProp.razor",
+              "ViewState": "AgIAABMAAAAAAAAAAADwvxoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T17:24:43.27Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-15T14:34:34.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "wwwroot\\app.css",
+              "ToolTip": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\wwwroot\\app.css",
+              "RelativeToolTip": "wwwroot\\app.css",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-20T07:05:40.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "bootstrap.min.css",
+              "DocumentMoniker": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\wwwroot\\bootstrap\\bootstrap.min.css",
+              "RelativeDocumentMoniker": "wwwroot\\bootstrap\\bootstrap.min.css",
+              "ToolTip": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\wwwroot\\bootstrap\\bootstrap.min.css",
+              "RelativeToolTip": "wwwroot\\bootstrap\\bootstrap.min.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-20T07:07:39.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T09:35:38.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Routing.razor",
+              "DocumentMoniker": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\Components\\Pages\\Learn_Blazor\\LearnBrazorComponents\\Routing.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Learn_Blazor\\LearnBrazorComponents\\Routing.razor",
+              "ToolTip": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\Components\\Pages\\Learn_Blazor\\LearnBrazorComponents\\Routing.razor",
+              "RelativeToolTip": "Components\\Pages\\Learn_Blazor\\LearnBrazorComponents\\Routing.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-15T17:31:32.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Components\\_Imports.razor",
+              "ToolTip": "C:\\Kiran Kumar\\CODE\\LearnBlazorFolder\\LearnBlazor\\Components\\_Imports.razor",
+              "RelativeToolTip": "Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T06:57:48.143Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
